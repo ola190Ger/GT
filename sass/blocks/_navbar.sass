@@ -1,0 +1,40 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: $bcgmenu-color
+    z-index: 99
+    &-wrap
+        display: flex
+        align-items: center
+        min-height: 80px
+    &__links
+        display: flex
+        align-items: center
+        min-height: 80px
+        margin-left: auto
+        margin-right: 100px
+    &__service, &__prices, &__portfolio, &__contactus
+        display: block
+        font-size: 20px
+        text-align: left
+        margin-left: 49px
+        +bold
+        & a 
+            text-decoration: none
+            color: $textmenu-color
+.logo
+    &__gt
+    display: block
+    width: 162px
+    height: 51px
+    margin-top: 15px
+    margin-bottom: 15px
+    margin-left: 100pxs
+
+
+@media ( max-width: 991px)
+    .navbar
+         &__service, &__prices, &__portfolio
+             display: none
