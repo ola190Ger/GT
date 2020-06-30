@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    font-display: swap;
+    //src: url('../fonts/ProximaNova-Semibold.eot');
+    src:
+    //url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    //url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Roboto-Bold';
+        font-display: swap;
+        //src: url('../fonts/ProximaNova-Regular.eot');
+        src: 
+        //url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        //url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @mixin bold {
+            font-family: 'Roboto-Bold', sans-serif;
+            
+        }
+
+        @mixin regular {
+            font-family: 'OpenSans-Regular', sans-serif;   
+        }
