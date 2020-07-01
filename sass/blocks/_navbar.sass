@@ -1,0 +1,61 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: $bcgmenu-color
+    z-index: 99
+    &-wrap
+        display: flex
+        align-items: center
+        min-height: 80px
+    &__links
+        display: flex
+        align-items: center
+        min-height: 80px
+        margin-left: auto
+        margin-right: 100px
+    &__service, &__prices, &__portfolio, &__contactus
+        display: block
+        font-size: 20px
+        text-align: left
+        margin-left: 49px
+        white-space: nowrap
+        +bold
+        & a 
+            text-decoration: none
+            color: $textmenu-color
+.logo
+    &__gt
+    display: block
+    width: 162px
+    margin-top: 15px
+    margin-bottom: 15px
+    margin-left: 100px
+
+@media ( max-width: 991px)
+    .navbar
+        margin-right: 0
+        &__links
+            margin-left: auto
+        &__service, &__prices, &__portfolio
+            display: none
+        
+@media ( max-width: 820px)
+    .navbar
+        &__links
+            margin-right: 50px
+        &__logo
+            margin-left: 50px
+    .logo
+        margin-right: 0
+@media ( max-width: 375px)
+    .navbar
+        &__links
+            margin-right: 20px
+        &__logo
+            margin-left: 20px
+        &__contactus
+            font-size: 15px
+
+
