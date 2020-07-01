@@ -1,10 +1,12 @@
-body
+.body
     +regular
 img
     max-width: 100%
   
 .section
-  margin-bottom: 200px
+  margin-bottom: 50px
+  padding-top: 100px
+  padding-bottom: 50px
   &-title
       font-size: 40px
       text-transform: uppercase
@@ -34,16 +36,28 @@ img
     color: $text-color
     +regular
     font-size: 20px
-    border: 1px solid $text-color
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
+    border: 2px solid $text-color
+
     &:focus
         outline: none
     &:hover
         background-color: #1C2D37
         color: #ffffff
+//image block
+.cls-1 
+    fill: none
+    stroke: #707070
+    stroke-linecap: square
+    stroke-miterlimit: 10
+    stroke-width: 2px
+
+.cls-2 
+    fill: url(#radial-gradient)
+
+.cls-3 
+    opacity: 0.8
+    fill: url(#radial-gradient-2)
+
     
 @media ( max-width: 768px)
     .section
