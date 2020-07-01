@@ -1,0 +1,60 @@
+.services
+    &-block
+        display: flex
+        justify-content: space-between
+        &__item
+            position: relative
+            width: 400px
+            height: 490px
+            border: 2px solid $text-color
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+            display: block
+            text-align: center
+            +regular
+        &__image
+            margin: auto
+            margin-top: 70px
+            width: 100px
+            height: 100px
+        &__title
+            font-size: 20px
+            color: $text-color
+            text-transform: uppercase
+        &__text
+            font-size: 20px
+            color: $text-color
+            margin: 45px 25px
+            text-align: center
+        &__button
+            position: absolute
+            bottom: -5%
+            transform: translateX(-50%)
+@media ( max-width: 1240px)
+   .services
+       &-block
+            margin: 15px
+            &__item
+                max-width: 325px
+                height: 490px
+@media ( max-width: 1024px)
+   .services
+        &-block
+            &__item
+                max-width: 300px
+@media ( max-width: 768px)
+   .services
+        &-block
+            justify-content: center
+            flex-wrap: wrap
+            &__item
+                max-width: 100%
+                margin-top: 40px
+            &__title
+                font-size: 16px
+            &__text
+                font-size: 14px       
+@media ( max-width: 480px)
+    .services
+            &-block
+                &__item
+                    height: 390px

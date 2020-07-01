@@ -2,23 +2,60 @@ body
     +regular
 img
     max-width: 100%
+  
+.section
+  margin-bottom: 200px
+  &-title
+      font-size: 40px
+      text-transform: uppercase
+      color: $text-color
+      text-align: center
+      margin-bottom: 0
+      +regular
+  &-image
+      display: block
+      width: 300px
+      height: 37px
+      margin: 20px auto
+  &-subtitle
+      display: block
+      max-width: 700px
+      font-size: 20px
+      color: $text-color
+      margin: auto
+      text-align: center
+      margin-bottom: 125px
+      +regular
 .button
-    display: block
     width: 170px
     height: 50px
-    border: 1px solid $text-color
     border-radius: 50px
     background-color: #ffffff
+    color: $text-color
+    +regular
     font-size: 20px
+    border: 1px solid $text-color
     display: flex
     flex-direction: row
     align-items: center
     justify-content: center
-   
-
+    &:focus
+        outline: none
+    &:hover
+        background-color: #1C2D37
+        color: #ffffff
+    
 @media ( max-width: 768px)
+    .section
+        &-title
+            font-size: 30px
+        &-subtitle
+            font-size: 15px
     .button
         font-size: 15px
-
+@media ( max-width: 480px)
+    .section
+        &-subtitle
+            margin-bottom: 50px
 
 
