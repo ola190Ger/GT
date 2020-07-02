@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/myjs.js">  
+    </script>
 </head>
 <body>
 
@@ -17,10 +20,12 @@
                         <img class="logo__gt" src="../gt_web_logo.png" alt="">
                     </div>
                     <div class="links navbar__links">
-                        <div class="navbar__service"><a href="#">Services</a></div>
-                        <div class="navbar__prices"><a href="#">Prices</a></div>
-                        <div class="navbar__portfolio"><a href="#">Portfolio</a></div>
-                        <div class="navbar__contactus"><a href="#">Contact us</a></div>
+                        <div class="navbar__service"><a  href="#" class="lang" key="serv">Services</a></div>
+                        <div class="navbar__prices"><a  href="#" class="lang" key="price">Prices</a></div>
+                        <div class="navbar__portfolio"><a  href="#" class="lang" key="portfolio">Portfolio</a></div>
+                        <div class="navbar__contactus"><a  href="#" class="lang" key="cont">Contact us</a></div>
+                        <div class="navbar__languag" ><button  data-name="ru" id="language" class="lang navbar__languag" key="lng">Ru</button></div>
+                        <!-- <div class="navbar__lang" ><button class="lang" id="ru" class="lang" key="ru">Ru</button></div> -->
                     </div>
                 </div>
             </div>
@@ -29,12 +34,12 @@
         <!-- /.navbar -->
         <div class="hero">
             <div class="container">
-                <span class="hero-subtitle__up">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, 
+                <span class="lang hero-subtitle__up" key='l1'>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
                 <!-- /.hero-subtitle__up -->
-                <h1 class="hero__title">Lorem ipsum dolor sit amet. </h1>
+                <h1 class="lang hero__title" key='l2'>Lorem ipsum dolor sit amet. </h1>
                 <!-- /.hero__title -->
-                <span class="hero-subtitle__down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
+                <span class="lang hero-subtitle__down"  key=l3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco <br></span>
                 <!-- /.hero-subtitle__down -->
@@ -42,7 +47,7 @@
                     <!-- <div class="button">
 
                     </div> -->
-                    <a href="#" class="button hero__button">Contact us</a>
+                    <a href="#" class="lang button hero__button"  key='cont'>Contact us</a>
                 <!-- </button>  -->
             </div>
             <!-- /.container -->
@@ -54,7 +59,7 @@
     <main>
         <section class="services section">
             <div class="container container-small">
-                <h2 class="section-title section__title">Our services</h2>
+                <h2 class="lang section-title section__title" key='os'>Our services</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302.498" height="36.3" viewBox="0 0 302.498 36.3">
                     <defs>
                       <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
@@ -71,33 +76,33 @@
                       <circle id="Ellipse_73" data-name="Ellipse 73" class="cls-3" cx="4.907" cy="4.907" r="4.907" transform="translate(765.773 -101.558)"/>
                     </g>
                   </svg>
-                <span class="section-subtitle section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                <span class="lang section-subtitle section__subtitle" key='ossub'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 <div class="services__block services-block">
                     <div class="services-block__item">
                         <img src="img/services/serv-1.png" alt="" class="services-block__image">
-                        <h4 class="services-block__title">Web design</h4>
+                        <h4 class="lang services-block__title" key='wd'>Web design</h4>
                         <!-- /.services-block__title -->
-                        <p class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p class="lang services-block__text" key='wdsub'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         <!-- /.services-block__text -->
-                        <button class="button services-block__button">Learn more</button>
+                        <button class="lang button services-block__button" key='lm'>Learn more</button>
                     </div>
                     <!-- /.services-block__item -->
                     <div class="services-block__item">
                         <img src="img/services/serv-2.png" alt="" class="services-block__image">
-                        <h4 class="services-block__title">Web development</h4>
+                        <h4 class="lang services-block__title" key='wdev'>Web development</h4>
                         <!-- /.services-block__title -->
-                        <p class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p class="lang services-block__text" key='wdevsub'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         <!-- /.services-block__text -->
-                        <button class="button services-block__button">Learn more</button>
+                        <button class="lang button services-block__button" key='lm'>Learn more</button>
                     </div>
                     <!-- /.services-block__item -->
                     <div class="services-block__item">
                         <img src="img/services/serv-3.png" alt="" class="services-block__image">
-                        <h4 class="services-block__title">Other</h4>
+                        <h4 class="lang services-block__title" key='ot'>Other</h4>
                         <!-- /.services-block__title -->
-                        <p class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p class="lang services-block__text"  key='otsub'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         <!-- /.services-block__text -->
-                        <button class="button services-block__button">Learn more</button>
+                        <button class="lang button services-block__button" key='lm'>Learn more</button>
                     </div>
                     <!-- /.services-block__item -->
                 </div>
@@ -108,7 +113,7 @@
         <!-- /.services -->
         <section class="portfolio section">
             <div class="container container-small">
-                <h2 class="section-title section__title">Our portfolio</h2>
+                <h2 class="lang section-title section__title" key='op'>Our portfolio</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302.498" height="36.3" viewBox="0 0 302.498 36.3">
                     <defs>
                       <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
@@ -125,7 +130,7 @@
                       <circle id="Ellipse_73" data-name="Ellipse 73" class="cls-3" cx="4.907" cy="4.907" r="4.907" transform="translate(765.773 -101.558)"/>
                     </g>
                   </svg>
-                <span class="section-subtitle section__subtitle portfolio__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                <span class="section-subtitle section__subtitle portfolio__subtitle" class="lang" key='opsub'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 <div class="portfolio-block">
                     <div class="portfolio-block__item">
                         <img src="img/portfolio/port-1.jpg" alt="" class="portfolio-block__image">
@@ -184,19 +189,27 @@
                       </div>
                       <!-- /.contacts-block__info -->
                       <div class="contacts-block__line"></div>
-                      <div class="contacts-block__input">
-                        <h4 class="contacts-block__title">Email us</h4>
-                        <!-- /.contacts-block__title -->
-                        <div class="contacts-block__rowfirst">
-                            <input type="text" class="input contacts-block__name" placeholder="Name">
-                            <input type="text" class="input contacts-block__email" placeholder="e-mail">
-                        </div>
-                        <div class="contacts-block__rowsecond">
-                            <input type="text" class="input contacts-block__subject" placeholder="Subject message">
-                            <p><textarea type="text" class="input contacts-block__text" placeholder="Write your message here"></textarea></p>
-                        </div>
-                        <button class="button contacts-block__button">Send message</button>
-                      </div>
+                      <form class="form" action="" method="post">
+                            <div class="contacts-block__input">
+                                    <h4 class="contacts-block__title">Email us</h4>
+                                    <!-- /.contacts-block__title -->
+                                    <div class="contacts-block__rowfirst">
+                                        <input  type="text" class="input contacts-block__name" required placeholder=" ">
+                                        <label class="label label__name" for="Name">Name</label>
+                                        <input  type="text" class="input contacts-block__email" required placeholder=" ">
+                                        <label class="label label__email" for="E-mail">E-mail address</label>
+                                        <div class="requirements">Input correct e-mail address</div>
+                                    </div>
+                                    <div class="contacts-block__rowsecond">
+                                        <input  type="text" class="input contacts-block__subject" required placeholder=" ">
+                                        <label class="lang label label__subject" key="Subjm" for="Subject">Subject message</label>
+                                        
+                                        <p><textarea  type="text" class="input contacts-block__text" required placeholder=" "></textarea></p>
+                                        <label class="label label__text" for="Message">Write your message here</label>
+                                    </div>
+                                    <button class="lang button contacts-block__button" class="lang" key='sm'>Send message</button>
+                                  </div>
+                      </form>
                       <!-- /.contacts-block__input -->
                   </div>
                   <!-- /.contacts-block -->
@@ -207,7 +220,7 @@
     </main>
     <footer class="footer">
         <img class="footer__img" src="img/footer/footer.png" alt="">
-        <span>© 2020 Privacy policy </span>
+        <span class="lang" key='pp'>© 2020 Privacy policy </span>
     </footer>
     <!-- /.footer -->
 </body>
