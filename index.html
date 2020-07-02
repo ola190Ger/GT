@@ -20,12 +20,14 @@
                         <img class="logo__gt" src="../gt_web_logo.png" alt="">
                     </div>
                     <div class="links navbar__links">
-                        <div class="navbar__service"><a  href="#" class="lang" key="serv">Services</a></div>
+
+                        <div class="navbar__service"><a  href="#services" class="lang" key="serv">Services</a></div>
                         <div class="navbar__prices"><a  href="#" class="lang" key="price">Prices</a></div>
-                        <div class="navbar__portfolio"><a  href="#" class="lang" key="portfolio">Portfolio</a></div>
-                        <div class="navbar__contactus"><a  href="#" class="lang" key="cont">Contact us</a></div>
+                        <div class="navbar__portfolio"><a  href="#portfolio" class="lang" key="portfolio">Portfolio</a></div>
+                        <div class="navbar__contactus"><a  href="#contacts" class="lang" key="cont">Contact us</a></div>
                         <div class="navbar__languag" ><button  data-name="ru" id="language" class="lang navbar__languag" key="lng">Ru</button></div>
                         <!-- <div class="navbar__lang" ><button class="lang" id="ru" class="lang" key="ru">Ru</button></div> -->
+
                     </div>
                 </div>
             </div>
@@ -47,7 +49,10 @@
                     <!-- <div class="button">
 
                     </div> -->
-                    <a href="#" class="lang button hero__button"  key='cont'>Contact us</a>
+
+
+                    <a href="#contacts" class="lang button hero__button"  key='cont'>Contact us</a>
+
                 <!-- </button>  -->
             </div>
             <!-- /.container -->
@@ -57,7 +62,7 @@
     </header>
     <!-- /.heder -->
     <main>
-        <section class="services section">
+        <section class="services section" id="services">
             <div class="container container-small">
                 <h2 class="lang section-title section__title" key='os'>Our services</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302.498" height="36.3" viewBox="0 0 302.498 36.3">
@@ -111,7 +116,7 @@
             <!-- /.container -->
         </section>
         <!-- /.services -->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="container container-small">
                 <h2 class="lang section-title section__title" key='op'>Our portfolio</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302.498" height="36.3" viewBox="0 0 302.498 36.3">
@@ -163,7 +168,7 @@
             <!-- /.container container-small -->
         </section>
         <!-- /.portfolio section -->
-        <section class="contacts section">
+        <section class="contacts section" id="contacts">
             <div class="container container-small">
                 <h2 class="section-title section__title">Liked our disigns?</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302.498" height="36.3" viewBox="0 0 302.498 36.3">
@@ -189,27 +194,29 @@
                       </div>
                       <!-- /.contacts-block__info -->
                       <div class="contacts-block__line"></div>
-                      <form class="form" action="" method="post">
+
+                      <form class="form" id="form" action="" method="post">
                             <div class="contacts-block__input">
                                     <h4 class="contacts-block__title">Email us</h4>
                                     <!-- /.contacts-block__title -->
                                     <div class="contacts-block__rowfirst">
-                                        <input  type="text" class="input contacts-block__name" required placeholder=" ">
+                                        <input name="name" id="name" type="text" class="input contacts-block__name" required placeholder=" ">
                                         <label class="label label__name" for="Name">Name</label>
-                                        <input  type="text" class="input contacts-block__email" required placeholder=" ">
+                                        <input  name="email" id="email" type="text" class="input contacts-block__email" required placeholder=" ">
                                         <label class="label label__email" for="E-mail">E-mail address</label>
                                         <div class="requirements">Input correct e-mail address</div>
                                     </div>
                                     <div class="contacts-block__rowsecond">
-                                        <input  type="text" class="input contacts-block__subject" required placeholder=" ">
+                                        <input name="subject" id="subject" type="text" class="input contacts-block__subject" required placeholder=" ">
                                         <label class="lang label label__subject" key="Subjm" for="Subject">Subject message</label>
                                         
-                                        <p><textarea  type="text" class="input contacts-block__text" required placeholder=" "></textarea></p>
+                                        <p><textarea name="text" id="text" type="text" class="input contacts-block__text" required placeholder=" "></textarea></p>
                                         <label class="label label__text" for="Message">Write your message here</label>
                                     </div>
-                                    <button class="lang button contacts-block__button" class="lang" key='sm'>Send message</button>
+                                    <button type="button" id="sendMail" class="lang button contacts-block__button" class="lang" key='sm'>Send message</button>
                                   </div>
                       </form>
+
                       <!-- /.contacts-block__input -->
                   </div>
                   <!-- /.contacts-block -->
@@ -223,5 +230,10 @@
         <span class="lang" key='pp'>© 2020 Privacy policy </span>
     </footer>
     <!-- /.footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mail.js"></script>
+
 </body>
 </html>
