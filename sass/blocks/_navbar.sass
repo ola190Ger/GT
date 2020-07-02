@@ -15,7 +15,7 @@
         min-height: 80px
         margin-left: auto
         margin-right: 100px
-    &__service, &__prices, &__portfolio, &__contactus
+    &__service, &__prices, &__portfolio, &__contactus, &__languag
         display: block
         font-size: 20px
         text-align: left
@@ -25,6 +25,21 @@
         & a 
             text-decoration: none
             color: $textmenu-color
+            &:hover
+                color: #929695
+    &__languag
+        background-color: $bcgmenu-color
+        color: $textmenu-color
+        border: none
+        outline: none
+        display: block
+        font-size: 20px
+        text-align: left
+        margin-left: 49px
+        white-space: nowrap
+        +bold
+        &:hover
+            color: #929695
 .logo
     &__gt
     display: block
@@ -32,6 +47,9 @@
     margin-top: 15px
     margin-bottom: 15px
     margin-left: 100px
+
+
+
 
 @media ( max-width: 991px)
     .navbar
@@ -55,7 +73,7 @@
             margin-right: 20px
         &__logo
             margin-left: 20px
-        &__contactus
+        &__contactus, &__lang
             font-size: 15px
 
 
