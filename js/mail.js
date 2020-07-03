@@ -29,12 +29,13 @@ $("#sendMail").on("click", function(){
         dataType: 'html',
         beforeSend: function(){
             $("#sendMail").prop("disabled", true);
-        },
-        succes: function(data){
+        }
+		}).done(function() {
+            console.log("отправлено")
             alert("Спасибо")
             $("#sendMail").prop("disabled", false);
-        }
-        });
+            $('#form').trigger('reset');
+		});
         
 });
 

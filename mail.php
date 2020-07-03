@@ -25,4 +25,9 @@
     $mail->Body    = "$name $email $sub $body";
     $mail->AltBody = '';
     
+    if(!$mail->send()) {
+        echo 'Error';
+    } //else {
+    //     header('location: thank-you.html');
+    // }
     ?>

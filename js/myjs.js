@@ -20,7 +20,7 @@ var arrLang={
 };
 
 $(function(){
-    $('.lang').click(function(){
+    $('#language').click(function(){
     
     var lang =document.getElementById('language').getAttribute('data-name');
 
