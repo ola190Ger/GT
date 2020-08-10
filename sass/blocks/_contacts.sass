@@ -26,6 +26,8 @@
             justify-content: space-between
 
             input
+                background: rgba(#f1f9fb, 0)
+                border: 1px  solid $text-color
                 width: 300px
                 height: 50px
                 margin-left: 50px
@@ -38,8 +40,11 @@
             display: block
             position: relative
             input
+                background: rgba(#f1f9fb, 0)
+                border: 1px  solid $text-color
                 max-width: 650px
                 margin-top: 50px
+                margin-left: 0
                 font-size: 20px
                 color: $text-color
                 padding-left: 10px
@@ -47,14 +52,15 @@
         .label 
             opacity: 0.3
             position: absolute
+            z-index: -1
             +regular
             //top: 8px
             &__name
                 left: 8px
             &__email
-                left: 278px
+                left: 360px
             &__subject
-                left: 8px
+                left: 208px
                 top: 50px
             &__text
                 left: 8px
@@ -63,6 +69,8 @@
         &__subject
             height: 50px
         &__text
+            background: rgba(#f1f9fb, 0)
+            border: 1px  solid $text-color
             height: 100px
             width: 650px
             margin-top: 50px
@@ -81,61 +89,64 @@
             margin-top: 50px
             float: right
 
-    
-    
-    input[type="text"],
-    input[type="email"],
-      width: 100%
-      border: 0
-      padding: 20px 20px 20px 50px
-      background: #eee
-      
-      &:focus 
-        
-        // removing default focus style
-        outline: 0
-        // adding new one
-        background: white
-        
-        & + label 
-          opacity: 0
-        
-      
-      
-      &:valid 
-        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg)
-        background-size: 20px
-        background-repeat: no-repeat
-        background-position: 20px 20px
-        & + label 
-          opacity: 0
-        
-      
-      
-      &:invalid:not(:focus):not(:placeholder-shown) 
-        background: pink
-        & + label 
-          opacity: 0
-        
-      
-      
-      &:invalid:focus:not(:placeholder-shown) 
-        & ~ .requirements 
-          max-height: 200px
-          padding: 0 30px 20px 50px
-        
-      
-      
-    
-    
-    .requirements 
-      padding: 0 30px 0 50px
-      color: #999
-      max-height: 0
-      transition: 0.28s
-      overflow: hidden
-      color: red
-      font-style: italic
+@media ( max-width: 1024px)
+    .contacts
+        margin-bottom: 150px
+        &-block
+            display: block 
+            text-align: center
+            &__line
+                &:before
+                    content: ''
+                    width: 100%
+                    height: 2px
+                    background-color: $text-color
+                    display: block
+            &__info
+                margin: auto
+            &__input
+                margin: auto
+            &__title
+                text-align: center
+                margin-top: 15px
+
+
+
+@media ( max-width: 768px)
+    .contacts
+        margin-bottom: 175px
+        &-block
+            margin: auto 30px
+            &__info
+                font-size: 20px
+            &__input
+                font-size: 20px
+            &__subject
+                max-width: 100%
+                margin-right: 30px
+                font-size: 15px
+            &__text
+                max-width: 100%
+                margin-right: 30px
+            &__rowfirst
+                display: block
+                justify-content: center
+                input
+                    margin-bottom: 20px
+                    margin-left: 0
+            .label
+                font-size: 20px 
+                &__name
+                    top: 5px
+                    left: 8px
+                &__email
+                    left: 8px
+                &__subject
+                    left: 8px
+                    top: 50px
+                &__text
+                    left: 8px
+                    top: 148px
   
   
 @media ( max-width: 1024px)
