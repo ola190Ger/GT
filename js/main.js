@@ -61,3 +61,13 @@ $(document).ready(function(){
         $(".blockall").remove();
         });  
 });
+
+// $(document).ready(function(){
+//     $(".services-info__description").hover(function(){
+//         $(".services-info__line").css('padding-top', '50%');
+//         },
+//         function(){
+//             $(".services-info__line").css('padding-top', '');
+//         }
+//     )
+// });

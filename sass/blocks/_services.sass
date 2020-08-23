@@ -36,20 +36,97 @@
         &__info-1, &__info-2, &__info-3
             display: none
             width: 80%
+            // height: 85%
             position: fixed
             background: #f7f7f7
             padding: 15px
             border-radius: 10px
             border: 1px solid #A5A5A5
             z-index: 999992
-            top: 250px
+            top: 10%
             font-size: 20px
             color: $text-color
+            overflow-y: scroll
             +regular
+    &-info
+        //margin-top: 20px
+        padding: 20px
+        &__item
+            //margin-bottom: 50px
+            display: grid
+            grid-template-columns: 1fr 30px 3fr
+            &:last-child
+                margin-bottom: 0
+            &:nth-child(2n)
+                background: #def2f8
+        &__line
+            position: relative
+            img
+                top: 50%
+                position: absolute
+                height: 140px
+                transform: translate(-50%, -50%)
+        &__title
+            margin-top: 30px
+            font-size: 30px
+            text-transform: uppercase
+            margin-bottom: 20px
+            color: $textmenu-color
+        &__bigname
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
+            &:hover
+                white-space: normal
+                height: auto
+                grid-column-start: 1
+                grid-column-end: 4
+
+        // &__bigtitle
+        //     overflow: hidden
+        //     text-overflow: ellipsis
+        //     white-space: nowrap
+        //     &:hover
+        //         white-space: normal
+        //         height: auto
+        //         grid-column-start: 1
+        //         grid-column-end: 3
+
+
+        &__subtitle
+            font-size: 20px
+            margin-bottom: 20px
+        &__description
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
+            margin-top: auto
+            margin-bottom: auto
+            padding-left: 25px
+            text-align: left
+            height: 1.3em
+            &:hover
+                white-space: normal
+                height: auto
+                margin-top: 0
+                margin: auto 0px
+                height: auto
+
+
+        
+            
+
+
 
 .openinfo_1, .openinfo_2, .openinfo_3
     cursor: pointer
     float: right
+
+.closedinfo
+    background: #f109097c
+    color: #ffffff
+    height: 30px
+    width: 30px
 
 .blockall 
     width: 100%
